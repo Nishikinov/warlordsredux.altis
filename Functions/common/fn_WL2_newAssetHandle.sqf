@@ -39,7 +39,7 @@ if (isPlayer _owner) then {
 			_rearmTime = if (_asset isKindOf "Helicopter" || {_asset isKindOf "Plane"}) then {30} else {((missionNamespace getVariable "BIS_WL2_rearmTimers") getOrDefault [(typeOf _asset), 600])};
 			_asset setVariable ["BIS_WL_nextRearm", serverTime + _rearmTime];
 
-			if (typeOf _asset != "B_UAV_06_F" && {typeOf _asset != "O_UAV_06_F"}) then {
+			if (typeOf _asset != "B_UAV_06_F" && {typeOf _asset != "O_UAV_06_F"} && {typeOf _asset != "B_UGV_02_Science_F"} && {typeOf _asset != "O_UGV_02_Science_F"}) then {
 				if (_asset isKindOf "Air") then {
 					_asset spawn BIS_fnc_WL2_sub_rearmActionAir;
 				} else {
@@ -58,6 +58,8 @@ if (isPlayer _owner) then {
 					};
 				};
 			} else {
+				waitUntil {sleep 0.1; !(isNull group _asset)};
+				systemChat format ["%1, %2", _asset, group _asset];
 				_asset spawn {
 					params ["_asset"];
 					[

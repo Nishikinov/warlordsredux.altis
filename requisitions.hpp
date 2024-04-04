@@ -115,7 +115,8 @@ class CfgWLRequisitionPresets
 				class B_static_AT_F							{cost = 300;	requirements[]={};	};	// "Static Titan Launcher (AT) [NATO]"  
 				class B_static_AA_F							{cost = 300;	requirements[]={};	};	// "Static Titan Launcher (AA) [NATO]"  
 				class B_Mortar_01_F							{cost = 3000;	requirements[]={};	};	// "Mortar"
-				class B_UGV_02_Demining_F					{cost = 100;	requirements[]={};	};	// "UGAS demining"  
+				class B_UGV_02_Demining_F					{cost = 100;	requirements[]={};	};	// "UGAV demining"  
+				class B_UGV_02_Science_F					{cost = 500;	requirements[]={};	};	// "UGAV science"
 				class B_UGV_01_F							{cost = 150;	requirements[]={};	offset[]={0, 3, 0};};	// "UGV Stomper"   
 				class B_UGV_01_rcws_F 						{cost = 400;	requirements[]={};	offset[]={0, 3, 0};};	// "UGAS" 				
 				class B_UAV_01_F							{cost = 500;    requirements[]={};	};  // AR-2
@@ -238,6 +239,7 @@ class CfgWLRequisitionPresets
 				class O_GMG_01_A_F							{cost = 650;	requirements[]={};	};	// "Mk30 GMG Auto Turret"
 				class O_Mortar_01_F							{cost = 3000;	requirements[]={};	};	// "Mortar"  
 				class O_UGV_02_Demining_F					{cost = 100;	requirements[]={};	offset[]={0, 3, 0};};	// "UGAV demining"  
+				class O_UGV_02_Science_F					{cost = 500;	requirements[]={};	offset[]={0, 3, 0};};	// "UGAV science"
 				class O_UGV_01_F							{cost = 150;	requirements[]={};	offset[]={0, 3, 0};};	// "UGV Stomper"   
 				class O_UGV_01_rcws_F						{cost = 400;	requirements[]={};	};	// "UGAV rcws"  
 				class O_UAV_01_F       						{cost = 500;    requirements[]={};  };  // AR-2
